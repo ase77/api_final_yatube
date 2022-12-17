@@ -1,30 +1,38 @@
-# API Yatube
+<a id="anchor"></a>
+# API для Yatube
 ## Описание:
-API (от англ. Application Programming Interface, «программный интерфейс приложения») — это интерфейс для обмена данными. Слово «программный» означает, что API служат в первую очередь для взаимодействия программ: с системой взаимодействует не разработчик, а код, написанный им.
+Реализация Application Programming Interface для проекта Yatube.
 
 ## Как запустить проект:
 
 Клонировать репозиторий и перейти в него в командной строке:
 
 ```
-git clone https://github.com/yandex-praktikum/kittygram2plus.git
+git clone git@github.com:ase77/api_final_yatube.git
 
-cd kittygram2plus
+cd api_final_yatube
 ```
 
 Cоздать и активировать виртуальное окружение:
 
-```
-python3 -m venv env
+* Если у вас Linux/MacOS
 
-source env/bin/activate
+    ```
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
 
-python3 -m pip install --upgrade pip
-```
+* Если у вас Windows
+
+    ```
+    python -m venv venv
+    source venv/Scripts/activate
+    ```
 
 Установить зависимости из файла `requirements.txt`:
 
 ```
+python3 -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
@@ -172,3 +180,5 @@ POST http://127.0.0.1:8000/api/v1/jwt/create/
     "password": "string"
 }
 ```
+
+[__В начало__](#anchor) :point_up:
